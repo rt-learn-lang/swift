@@ -29,6 +29,8 @@ switch vegetable3 {
     print("Everything tastes good in soup.")
 }
 
+// if else
+
 print("5. While loop")
 var n5 = 2
 while n5 < 50 {

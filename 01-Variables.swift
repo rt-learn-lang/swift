@@ -2,6 +2,7 @@ var var1 = "Hello World"
 // var1 can be reassigned with the same type only
 print("1. Declaring a variable: " + var1)
 
+// Use let to define a constant.
 let const2 = 3.1415 // cannot be reassigned
 print("2. Declaring a constant: \(const2)")
 
@@ -23,4 +24,9 @@ print("6. Optional: \(String(describing: var6))") // Convert the type to silence
 let var7: String? = nil
 print("7. Optional using default value: \(var7 ?? "default")")
 
+let var8: String? = "Not nil"
+print("8. Force unwrap when you are sure the optional has got a value: \(var8!)")
 
+
+let var9 = 9
+print(type(of: var9))
