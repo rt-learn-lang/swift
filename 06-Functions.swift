@@ -4,6 +4,13 @@ func greet1(person: String, day: String) -> String {
 }
 print("1. Defining and invoking a function: \(greet1(person: "Bob", day: "Tuesday"))")
 
+
+// 1. Function definition without label
+func setPlainText(_ theString:String) {
+    print(theString)
+}
+
+
 func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum: Int) {
     var min = scores[0]
     var max = scores[0]
