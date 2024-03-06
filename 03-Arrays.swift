@@ -11,5 +11,3 @@ print("2. Updating item in an array: \(array2)")
 var array3 = ["catfish", "water", "tulips"]
 array3.append("blue paint")
 print("3. Appending item to an array: \(array3)")
-
-
