@@ -1,0 +1,16 @@
+////////////////////////////////////////////////////////////////////////////////
+// ## Tips
+// *   Void is not equivalent to a nil.
+///////////////////////////////////////////////////////////////////////////////
+
+func basicFunction() {
+    print("No return value example")
+}
+
+basicFunction()
+
+func basicFunctionExplicit() {
+    print("No return value example 2")
+}
+
+basicFunctionExplicit()

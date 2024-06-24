@@ -1,8 +1,9 @@
 // 1. Class declaration.
 class NamedShape {
-
     // 2. Class property
     var numberOfSides = 0
+
+    //  swiftlint:disable:next identifier_name
     let PI = 3.1415
     var name: String
 
@@ -16,12 +17,12 @@ class NamedShape {
     }
 
     func getName() -> String {
-        return self.name
+        return name
     }
 
-    // 5. Deinitializer
+    // 5. De-initializer
     deinit {
-        print("5. Class deinitialized")
+        print("5. Class de-initialized")
     }
 }
 
@@ -55,23 +56,25 @@ triangle.perimeter = 9.9
 print(triangle.sideLength)
 // Prints "3.3000000000000003”
 
-
 class TriangleAndSquare {
     var triangle: EquilateralTriangle {
         willSet {
             square.sideLength = newValue.sideLength
         }
     }
+
     var square: Square {
         willSet {
             triangle.sideLength = newValue.sideLength
         }
     }
+
     init(size: Double, name: String) {
         square = Square(sideLength: size, name: name)
         triangle = EquilateralTriangle(sideLength: size, name: name)
     }
 }
+
 var triangleAndSquare = TriangleAndSquare(size: 10, name: "another test shape")
 print(triangleAndSquare.square.sideLength)
 // Prints "10.0"
@@ -80,5 +83,3 @@ print(triangleAndSquare.triangle.sideLength)
 triangleAndSquare.square = Square(sideLength: 50, name: "larger square")
 print(triangleAndSquare.triangle.sideLength)
 // Prints "50.0”
-
-

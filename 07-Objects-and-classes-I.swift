@@ -1,6 +1,5 @@
 // 1. Class declaration.
 class NamedShape {
-
     // 2. Class property
     var numberOfSides = 0
     let PI = 3.1415
@@ -16,7 +15,7 @@ class NamedShape {
     }
 
     func getName() -> String {
-        return self.name
+        return name
     }
 
     // 5. Deinitializer
@@ -50,26 +49,23 @@ class Square: NamedShape {
         return "A square with sides of length \(sideLength)."
     }
 }
+
 let square2 = Square(sideLength: 5.2, name: "my test square")
 print(square2.area())
 print(square2.simpleDescription())
 
 class Circle: NamedShape {
-
     var radius: Double
 
     init(radius: Double, name: String) {
         self.radius = radius
         super.init(name: name)
     }
+
     func area() -> Double {
-        return Double.pi * self.radius
+        return Double.pi * radius
     }
 }
 
 let circle = Circle(radius: 5, name: "Circlet")
 print(circle)
-
-
-
-
