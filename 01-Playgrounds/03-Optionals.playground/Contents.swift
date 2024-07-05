@@ -1,5 +1,4 @@
-/// Optionals  Examples
-///
+// Optionals  Examples
 
 // Using Optionals
 var regularInt: Int
@@ -19,4 +18,3 @@ if optionalInt != nil {
 } else {
     print("nil, Do nothing")
 }
-
